@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Olimpiade Matematika Terapan (OMT) 2025 - Kompetisi matematika tingkat SD/MI se-Kabupaten Jember. Diselenggarakan oleh LAKPESDAM-MWC NU Sukorambi & MTs Sunan Ampel.">
+    <meta name="keywords" content="Olimpiade Matematika, OMT 2025, Jember, SD, MI, LAKPESDAM, MWC NU Sukorambi, MTs Sunan Ampel">
+    <title>OMT 2025 - Olimpiade Matematika Terapan | SD/MI Se-Kabupaten Jember</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="images/mwcnu.jpeg" alt="Logo MWC NU">
+                <span>OMT 2025</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Beranda</a></li>
+                <li><a href="#tentang" class="nav-link">Tentang</a></li>
+                <li><a href="#jadwal" class="nav-link">Jadwal</a></li>
+                <li><a href="#materi" class="nav-link">Materi</a></li>
+                <li><a href="#hadiah" class="nav-link">Hadiah</a></li>
+                <li><a href="#daftar" class="nav-link">Pendaftaran</a></li>
+                <li><a href="#juknis" class="nav-link">Juknis</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+            <div class="floating-shape shape-5"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content reveal">
+                <div class="hero-badge">🏆 Kompetisi Matematika Terbesar di Jember</div>
+                <h1 class="hero-title">Olimpiade Matematika Terapan <span class="highlight">2025</span></h1>
+                <p class="hero-subtitle">Tingkat SD/MI Sederajat Se-Kabupaten Jember</p>
+                <div class="hero-organizer">
+                    <p>Diselenggarakan oleh:</p>
+                    <strong>LAKPESDAM-MWC NU SUKORAMBI & MTs SUNAN AMPEL</strong>
+                </div>
+                
+                <!-- Countdown Timer -->
+                <div class="countdown-wrapper">
+                    <p class="countdown-label">⏰ Hitung Mundur Menuju Hari H:</p>
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="days">00</span>
+                            <span class="countdown-text">Hari</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="hours">00</span>
+                            <span class="countdown-text">Jam</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="minutes">00</span>
+                            <span class="countdown-text">Menit</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="seconds">00</span>
+                            <span class="countdown-text">Detik</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-date">
+                    <span class="date-icon">📅</span>
+                    <span>Senin, 22 Desember 2025</span>
+                </div>
+                
+                <a href="https://forms.gle/iMoYvQm4HmyfzVy37" target="_blank" class="btn btn-primary btn-hero">
+                    <span>🚀 Daftar Sekarang</span>
+                </a>
+            </div>
+            
+            <div class="hero-visual reveal">
+                <div class="hero-logos">
+                <img src="images/math_illustration.png" alt="Matematika" class="logo-float logo-1">
+                <img src="images/happy_students.png" alt="Siswa SD" class="logo-float logo-2">
+            </div>
+                <div class="math-symbols">
+                    <span class="symbol symbol-1">∑</span>
+                    <span class="symbol symbol-2">π</span>
+                    <span class="symbol symbol-3">∞</span>
+                    <span class="symbol symbol-4">√</span>
+                    <span class="symbol symbol-5">÷</span>
+                    <span class="symbol symbol-6">×</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,64 C480,150 960,-20 1440,64 L1440,120 L0,120 Z" fill="#ffffff"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Tentang Section -->
+    <section class="section tentang" id="tentang">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">📚 Tentang Kompetisi</span>
+                <h2 class="section-title">Apa itu <span class="highlight">OMT 2025</span>?</h2>
+            </div>
+            
+            <div class="tentang-grid">
+                <div class="tentang-card reveal">
+                    <div class="tentang-icon">🎯</div>
+                    <h3>Tujuan</h3>
+                    <p>Mengembangkan logika matematika, menjaring siswa berprestasi, dan membudayakan kompetisi yang sehat di kalangan pelajar SD/MI.</p>
+                </div>
+                
+                <div class="tentang-card reveal">
+                    <div class="tentang-icon">👨‍🎓</div>
+                    <h3>Peserta</h3>
+                    <p>Terbuka untuk seluruh siswa <strong>Kelas 4, 5, dan 6</strong> SD/MI Sederajat se-Kabupaten Jember.</p>
+                </div>
+                
+                <div class="tentang-card reveal">
+                    <div class="tentang-icon">🌟</div>
+                    <h3>Keunggulan</h3>
+                    <p>Soal berbasis <strong>Matematika Terapan</strong> yang relevan dengan kehidupan sehari-hari, melatih problem solving dan critical thinking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jadwal & Lokasi Section -->
+    <section class="section jadwal" id="jadwal">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">📅 Jadwal & Lokasi</span>
+                <h2 class="section-title">Timeline <span class="highlight">Kegiatan</span></h2>
+            </div>
+            
+            <div class="timeline reveal">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-icon">📝</span>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">1 - 15 Desember 2025</span>
+                        <h3>Pendaftaran</h3>
+                        <p>Periode pendaftaran peserta melalui Google Form. Segera daftarkan diri Anda!</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-icon">📋</span>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">20 Desember 2025</span>
+                        <h3>Technical Meeting</h3>
+                        <p>Briefing teknis persiapan lomba bagi sekolah yang mendaftarkan peserta.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item highlight-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-icon">🏆</span>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">22 Desember 2025 • 07.00 WIB - Selesai</span>
+                        <h3>Hari H Lomba</h3>
+                        <p>Pelaksanaan Olimpiade Matematika Terapan 2025. Bersiaplah untuk bersaing!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lokasi-card reveal">
+                <div class="lokasi-icon">📍</div>
+                <div class="lokasi-info">
+                    <h3>Lokasi Pelaksanaan</h3>
+                    <p class="lokasi-name">MTs Sunan Ampel Sukorambi</p>
+                    <p class="lokasi-address">Kecamatan Sukorambi, Kabupaten Jember</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materi Section -->
+    <section class="section materi" id="materi">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">📖 Materi Lomba</span>
+                <h2 class="section-title">Cakupan <span class="highlight">Materi</span></h2>
+                <p class="section-desc">Materi yang diujikan mencakup kompetensi matematika tingkat SD/MI</p>
+            </div>
+            
+            <div class="materi-grid">
+                <div class="materi-card reveal">
+                    <div class="materi-header">
+                        <span class="materi-icon">🔢</span>
+                        <h3>Bilangan</h3>
+                    </div>
+                    <ul class="materi-list">
+                        <li>Operasi hitung (penjumlahan, pengurangan, perkalian, pembagian)</li>
+                        <li>FPB dan KPK</li>
+                        <li>Pecahan dan desimal</li>
+                        <li>Bilangan bulat</li>
+                    </ul>
+                </div>
+                
+                <div class="materi-card reveal">
+                    <div class="materi-header">
+                        <span class="materi-icon">📏</span>
+                        <h3>Pengukuran</h3>
+                    </div>
+                    <ul class="materi-list">
+                        <li>Satuan waktu dan konversi</li>
+                        <li>Satuan berat</li>
+                        <li>Luas bangun datar</li>
+                        <li>Volume bangun ruang</li>
+                    </ul>
+                </div>
+                
+                <div class="materi-card reveal">
+                    <div class="materi-header">
+                        <span class="materi-icon">📐</span>
+                        <h3>Geometri</h3>
+                    </div>
+                    <ul class="materi-list">
+                        <li>Sifat bangun datar</li>
+                        <li>Sifat bangun ruang</li>
+                        <li>Keliling dan luas</li>
+                        <li>Simetri dan pencerminan</li>
+                    </ul>
+                </div>
+                
+                <div class="materi-card reveal">
+                    <div class="materi-header">
+                        <span class="materi-icon">🧠</span>
+                        <h3>Statistika & Logika</h3>
+                    </div>
+                    <ul class="materi-list">
+                        <li>Pengolahan data sederhana</li>
+                        <li>Diagram dan grafik</li>
+                        <li>Soal cerita terapan</li>
+                        <li>Penalaran logis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hadiah Section -->
+    <section class="section hadiah" id="hadiah">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">🎁 Hadiah</span>
+                <h2 class="section-title">Apresiasi untuk <span class="highlight">Juara</span></h2>
+                <p class="section-desc">Hadiah menarik menanti para pemenang!</p>
+            </div>
+            
+            <div class="podium-container reveal">
+                <div class="podium-item second">
+                    <div class="podium-medal">🥈</div>
+                    <h3>Juara 2</h3>
+                    <div class="podium-rewards">
+                        <span>🏆 Piala</span>
+                        <span>📜 Piagam</span>
+                        <span>💰 Uang Pembinaan</span>
+                    </div>
+                    <div class="podium-stand stand-2">2</div>
+                </div>
+                
+                <div class="podium-item first">
+                    <div class="podium-medal">🥇</div>
+                    <h3>Juara 1</h3>
+                    <div class="podium-rewards">
+                        <span>🏆 Piala</span>
+                        <span>📜 Piagam</span>
+                        <span>💰 Uang Pembinaan</span>
+                    </div>
+                    <div class="podium-stand stand-1">1</div>
+                </div>
+                
+                <div class="podium-item third">
+                    <div class="podium-medal">🥉</div>
+                    <h3>Juara 3</h3>
+                    <div class="podium-rewards">
+                        <span>🏆 Piala</span>
+                        <span>📜 Piagam</span>
+                        <span>💰 Uang Pembinaan</span>
+                    </div>
+                    <div class="podium-stand stand-3">3</div>
+                </div>
+            </div>
+            
+            <div class="harapan-container reveal">
+                <div class="harapan-card">
+                    <span class="harapan-badge">⭐ Harapan 1</span>
+                    <p>Piagam + Uang Pembinaan</p>
+                </div>
+                <div class="harapan-card">
+                    <span class="harapan-badge">⭐ Harapan 2</span>
+                    <p>Piagam + Uang Pembinaan</p>
+                </div>
+            </div>
+            
+            <div class="sertifikat-info reveal">
+                <div class="sertifikat-icon">📜</div>
+                <p><strong>Sertifikat untuk Seluruh Peserta!</strong><br>Setiap peserta akan mendapatkan sertifikat partisipasi sebagai apresiasi keikutsertaan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pendaftaran Section -->
+    <section class="section daftar" id="daftar">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">✍️ Pendaftaran</span>
+                <h2 class="section-title">Informasi <span class="highlight">Pendaftaran</span></h2>
+            </div>
+            
+            <div class="daftar-wrapper reveal">
+                <div class="daftar-card">
+                    <div class="daftar-icon">💰</div>
+                    <h3>Biaya Pendaftaran</h3>
+                    <p class="daftar-price">Rp 50.000</p>
+                    <span class="daftar-note">per peserta</span>
+                </div>
+                
+                <div class="daftar-card">
+                    <div class="daftar-icon">📞</div>
+                    <h3>Narahubung</h3>
+                    <p class="contact-name">Husnul Fatimah</p>
+                    <a href="https://wa.me/6282299465969" class="contact-phone" target="_blank">
+                        <span class="wa-icon">📱</span>
+                        0822-9946-5969
+                    </a>
+                </div>
+                
+                <div class="daftar-card cta-card">
+                    <div class="daftar-icon">🚀</div>
+                    <h3>Daftar Sekarang!</h3>
+                    <p>Jangan lewatkan kesempatan emas ini</p>
+                    <a href="https://forms.gle/iMoYvQm4HmyfzVy37" target="_blank" class="btn btn-primary">
+                        Formulir Pendaftaran
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Juknis Section -->
+    <section class="section juknis" id="juknis">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">📄 Petunjuk Teknis</span>
+                <h2 class="section-title">Download <span class="highlight">Juknis</span></h2>
+                <p class="section-desc">Unduh petunjuk teknis lengkap untuk persiapan lomba</p>
+            </div>
+            
+            <div class="juknis-card reveal">
+                <div class="juknis-icon">
+                    <span>📋</span>
+                </div>
+                <div class="juknis-info">
+                    <h3>Juknis OMT 2025</h3>
+                    <p>Dokumen ini berisi petunjuk teknis lengkap tentang tata cara pendaftaran, aturan lomba, kriteria penilaian, dan informasi penting lainnya.</p>
+                    <div class="juknis-meta">
+                        <span class="meta-item">📄 Format: DOCX</span>
+                        <span class="meta-item">📅 Update: Desember 2025</span>
+                    </div>
+                </div>
+                <a href="Juknis OMT 2025.docx" download class="btn btn-download">
+                    <span class="download-icon">⬇️</span>
+                    <span>Download Juknis</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq" id="faq">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">❓ FAQ</span>
+                <h2 class="section-title">Pertanyaan <span class="highlight">Umum</span></h2>
+            </div>
+            
+            <div class="faq-container reveal">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Siapa saja yang boleh mengikuti OMT 2025?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>OMT 2025 terbuka untuk siswa-siswi kelas 4, 5, dan 6 SD/MI sederajat se-Kabupaten Jember. Peserta harus terdaftar aktif di sekolah masing-masing.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Apa saja yang harus dibawa saat lomba?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Peserta wajib membawa:</p>
+                        <ul>
+                            <li>Kartu peserta (akan diberikan setelah pendaftaran)</li>
+                            <li>Alat tulis: pensil 2B, pulpen, penghapus, penggaris</li>
+                            <li>Kartu identitas siswa atau surat keterangan dari sekolah</li>
+                        </ul>
+                        <p><strong>Catatan:</strong> Tidak diperkenankan membawa kalkulator atau alat hitung elektronik.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Bagaimana sistem penilaian lomba?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Penilaian berdasarkan jumlah jawaban benar. Soal terdiri dari pilihan ganda dan isian singkat. Tidak ada pengurangan nilai untuk jawaban salah.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Apakah ada pendampingan dari sekolah?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Setiap sekolah diharapkan mengirimkan guru pendamping. Guru pendamping akan mendapat fasilitas konsumsi dan sertifikat pendamping.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Kapan pengumuman hasil lomba?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Pengumuman pemenang akan dilaksanakan pada hari yang sama setelah proses koreksi selesai. Penyerahan hadiah langsung dilakukan di lokasi lomba.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Olimpiade Matematika Terapan 2025</h3>
+                    <p>Tingkat SD/MI Sederajat Se-Kabupaten Jember</p>
+                </div>
+                
+                <div class="footer-logos">
+                    <p>Diselenggarakan oleh:</p>
+                    <div class="logo-grid">
+                        <img src="images/lakpesdam.jpeg" alt="LAKPESDAM">
+                        <img src="images/mwcnu.jpeg" alt="MWC NU">
+                    </div>
+                </div>
+                
+                <div class="footer-contact">
+                    <p>📍 MTs Sunan Ampel Sukorambi, Jember</p>
+                    <p>📞 Husnul Fatimah: 0822-9946-5969</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 OMT 2025 - LAKPESDAM-MWC NU Sukorambi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
