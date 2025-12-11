@@ -1359,6 +1359,20 @@ button {
     opacity: 0.8;
 }
 
+.footer-sponsors {
+    text-align: center;
+}
+
+.footer-sponsors p {
+    margin-bottom: 16px;
+    opacity: 0.7;
+    font-size: 0.95rem;
+}
+
+.sponsor-grid {
+    justify-content: center;
+}
+
 .footer-bottom {
     padding-top: 30px;
     text-align: center;
